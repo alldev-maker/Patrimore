@@ -13,7 +13,7 @@ const Footer = () => (
   <footer>
     <div className="container">
       <div className="d-flex justify-content-between mb-5">
-        <Row>
+        <div>
           <h3 className="mb-3 label">Sobre Nosotros</h3>
           <ul>
             {footer_menu1.map((item, idx) => (
@@ -24,8 +24,8 @@ const Footer = () => (
               </li>
             ))}
           </ul>
-        </Row>
-        <Row>
+        </div>
+        <div>
           <h3 className="mb-3 label">Comunidad</h3>
           <ul>
             {footer_menu2.map((item, idx) => (
@@ -36,8 +36,8 @@ const Footer = () => (
               </li>
             ))}
           </ul>
-        </Row>
-        <Row>
+        </div>
+        <div>
           <h3 className="mb-3 label">Contacto</h3>
           <ul>
             {footer_menu3.map((item, idx) => (
@@ -48,8 +48,8 @@ const Footer = () => (
               </li>
             ))}
           </ul>
-        </Row>
-        <Row>
+        </div>
+        <div>
           <h3 className="mb-3 label">Con el apoyo de:</h3>
           <ul>
             {footer_menu4.map((item, idx) => (
@@ -60,8 +60,8 @@ const Footer = () => (
               </li>
             ))}
           </ul>
-        </Row>
-        <Row>
+        </div>
+        <div>
           <h3 className="mb-3 label">Encuéntranos en:</h3>
           <ul className="social-links">
             {footer_menu5.map((item, idx) => (
@@ -72,7 +72,7 @@ const Footer = () => (
               </li>
             ))}
           </ul>
-        </Row>
+        </div>
       </div>
       <p className="bottom-bar">
         <Link to="/">
