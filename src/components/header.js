@@ -43,7 +43,7 @@ const Header = () => {
             <Link className="nav-link" to="/">
               Entrar
             </Link>
-            <Link className="btn-primary" to="/">
+            <Link className="btn-start" to="/">
               Empezar
             </Link>
           </div>

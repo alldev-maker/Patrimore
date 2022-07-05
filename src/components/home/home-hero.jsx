@@ -79,7 +79,7 @@ const HomeHero = () => (
             content="Nuestro equipo creará un plan financiero en base a tu realidad financiera y tus sueños. Un asesor financiero te ayudará a implementarlo, acompañándote en cada paso."
           />
           <div className="btn-groups d-flex align-items-center">
-            <Link className="btn-primary me-4" to="/">
+            <Link className="btn-start me-4" to="/">
               Empezar
             </Link>
             <WatchButton></WatchButton>

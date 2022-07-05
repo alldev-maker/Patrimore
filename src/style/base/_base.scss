@@ -1,8 +1,6 @@
 * {
-  font-family: "Clash Display";
   margin: 0;
   padding: 0;
-  color: $title;
   font-family: "Poppins";
 }
 
@@ -25,7 +23,7 @@ body {
     box-shadow: inset 0 0 3px rgba(black, 0.8);
   }
   &::-webkit-scrollbar-thumb {
-    background-color: green;
+    background-color: $secondary;
     border-radius: 3px;
   }
 }

@@ -27,6 +27,11 @@ const StyledLink = styled(Link)`
   border: 1px solid #8e24aa;
   border-radius: 100px;
   color: #8e24aa;
+  &:hover {
+    background-color: #8e24aa;
+    color: white;
+    transition: all ease-in 0.35s;
+  }
 `
 
 const Services = () => (

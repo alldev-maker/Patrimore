@@ -1,8 +1,14 @@
 import {
   Barras,
   Billetera,
+  George,
+  Graph1,
+  Graph2,
+  Graph3,
+  Joanna,
   Monitor,
   Person,
+  Rafael,
   Work1,
   Work2,
   Work3,
@@ -84,5 +90,56 @@ export const work_flow = [
    <strong>Verás cómo crece tu patrimonio</strong> y avanzas hacia el logro de tus sueños.
     </p>
     `,
+  },
+]
+
+export const benefits = [
+  {
+    title: "Un plan financiero",
+    content: `<p><strong>Diseñado por expertos, a la medida de tu realidad y tus sueños.</strong> Para alcanzar el bienestar que siempre has querido tener.</p>`,
+    img: Graph1,
+  },
+  {
+    title: "Recomendaciones de inversión",
+    content: `<p><strong>¿Quieres invertir, pero no sabes en qué?</strong> Deja que tu asesor te guíe hacia los mejores instrumentos del mercado. Sin restricciones, ni conflictos de interés.</p>`,
+    img: Graph2,
+  },
+  {
+    title: "Un asesor,siempre a tu lado",
+    content: `<p><strong>Tu asesor estará contigo para implementar el plan.</strong>Tendrás reuniones periódicas de seguimiento. Ante dudas, consultas o un consejo, ahí estaremos.</p>`,
+    img: Graph3,
+  },
+]
+
+export const testimonials = [
+  {
+    name: "Joanna Meza",
+    feedback: `"Patrimore me ayudo a ordenar números, medir mis logros, establecer nuevos objetivos y seguir aprendiendo, pero esta vez con apoyo, acompañada."`,
+    rating: 5,
+    avatar: Joanna,
+  },
+  {
+    name: "Rafael Molina",
+    feedback: `"El apoyo de Patrimore y mi asesor han sido invaluables, por todo el progreso que he logrado en mis finanzas durante el proceso de asesoria."`,
+    rating: 4.7,
+    avatar: Rafael,
+  },
+  {
+    name: "George Meredith",
+    feedback: `"Para mi Patrimore es confianza, principalmente por el compromiso con el cliente y nivel profesional de sus asesores."`,
+    rating: 4.3,
+    avatar: George,
+  },
+  {
+    name: "Joanna Meza",
+    feedback: `"Patrimore me ayudo a ordenar números, medir mis logros, establecer nuevos objetivos y seguir aprendiendo, pero esta vez con apoyo, acompañada."`,
+    rating: 5,
+    avatar: Joanna,
+  },
+  {
+    name: "Rafael Molina",
+    feedback: `"El apoyo de Patrimore y mi asesor han sido invaluables, por todo el progreso que he logrado en mis finanzas durante el proceso de asesoria."`,
+    rating: 4.4,
+    avatar: Rafael,
   },
 ]

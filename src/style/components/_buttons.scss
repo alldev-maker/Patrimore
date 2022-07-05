@@ -1,10 +1,14 @@
 .btn {
-  &-primary {
+  &-start {
     padding: 10px 24px;
     font-size: 18px;
     line-height: 28px;
     color: white;
-    background-color: $primary !important;
+    background-color: $primary;
     border-radius: 100px;
+    &:hover {
+      color: white;
+      background-color: $secondary;
+    }
   }
 }
