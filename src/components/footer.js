@@ -9,7 +9,6 @@ import {
   footer_menu4,
   footer_menu5,
 } from "../utils/staticData"
-import { Typography } from "./styled"
 
 const Row = styled.div``
 
@@ -18,15 +17,7 @@ const Footer = () => (
     <div className="container">
       <div className="d-flex justify-content-between mb-5">
         <Row>
-          <Typography
-            className="mb-3"
-            weight={700}
-            size={16}
-            height={18}
-            color="#172635"
-          >
-            Sobre Nosotros
-          </Typography>
+          <h3 className="mb-3 label">Sobre Nosotros</h3>
           <ul>
             {footer_menu1.map((item, idx) => (
               <li key={idx}>
@@ -38,15 +29,7 @@ const Footer = () => (
           </ul>
         </Row>
         <Row>
-          <Typography
-            className="mb-3"
-            weight={700}
-            size={16}
-            height={18}
-            color="#172635"
-          >
-            Comunidad
-          </Typography>
+          <h3 className="mb-3 label">Comunidad</h3>
           <ul>
             {footer_menu2.map((item, idx) => (
               <li key={idx}>
@@ -58,15 +41,7 @@ const Footer = () => (
           </ul>
         </Row>
         <Row>
-          <Typography
-            className="mb-3"
-            weight={700}
-            size={16}
-            height={18}
-            color="#172635"
-          >
-            Contacto
-          </Typography>
+          <h3 className="mb-3 label">Contacto</h3>
           <ul>
             {footer_menu3.map((item, idx) => (
               <li key={idx}>
@@ -78,15 +53,7 @@ const Footer = () => (
           </ul>
         </Row>
         <Row>
-          <Typography
-            className="mb-3"
-            weight={700}
-            size={16}
-            height={18}
-            color="#172635"
-          >
-            Con el apoyo de:
-          </Typography>
+          <h3 className="mb-3 label">Con el apoyo de:</h3>
           <ul>
             {footer_menu4.map((item, idx) => (
               <li key={idx}>
@@ -98,15 +65,7 @@ const Footer = () => (
           </ul>
         </Row>
         <Row>
-          <Typography
-            className="mb-3"
-            weight={700}
-            size={16}
-            height={18}
-            color="#172635"
-          >
-            Encuéntranos en:
-          </Typography>
+          <h3 className="mb-3 label">Encuéntranos en:</h3>
           <ul className="social-links">
             {footer_menu5.map((item, idx) => (
               <li key={idx}>
@@ -118,12 +77,12 @@ const Footer = () => (
           </ul>
         </Row>
       </div>
-      <Typography className="bottom-bar" size={14} height={18} align="center">
+      <p className="bottom-bar">
         <Link to="/">
           <img className="footer-logo" src={Logo} alt="logo" />
         </Link>
         todos los derechos reservados @patrimore.cl
-      </Typography>
+      </p>
     </div>
   </footer>
 )

@@ -25,9 +25,7 @@
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "react-star-ratings": "^2.3.0",
-    "swiper": "^8.2.6",
-    "styled-components": "^5.3.3",
-    "styled-breakpoints": "^11.0.4"
+    "swiper": "^8.2.6"
   },
   "devDependencies": {
     "prettier": "^2.6.2"

@@ -4,46 +4,58 @@ h3,
 p {
   margin-bottom: 0;
 }
-// h1 {
-//   font-weight: 600;
-//   font-size: 48px;
-//   line-height: 72px;
-//   letter-spacing: -0.04em;
-//   @include mq("lg", max) {
-//     font-size: 24px;
-//     line-height: 32px;
-//   }
-// }
 
-// h2 {
-//   font-weight: 600;
-//   font-size: 32px;
-//   line-height: 48px;
-//   letter-spacing: -0.04em;
-//   @include mq("lg", max) {
-//     font-weight: 700;
-//     font-size: 24px;
-//     line-height: 32px;
-//   }
-// }
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: -0.04em;
+  color: $title;
+  @include mq("lg", max) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
 
-// h3 {
-//   font-weight: 600;
-//   font-size: 20px;
-//   line-height: 24px;
-//   letter-spacing: -0.0066em;
-//   @include mq("sm", max) {
-//     font-weight: 700;
-//     font-size: 24px;
-//     line-height: 32px;
-//   }
-// }
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+  color: $title;
+  @include mq("lg", max) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
 
-// p {
-//   font-size: 18px;
-//   line-height: 28px;
-//   @include mq("sm", max) {
-//     font-size: 12px;
-//     line-height: 15px;
-//   }
-// }
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.0066em;
+  color: $title;
+  @include mq("sm", max) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+  color: $text;
+  @include mq("sm", max) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.kicker {
+  font-size: 20px;
+  font-weight: 600;
+  color: $primary;
+  line-height: 34px;
+}

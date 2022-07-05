@@ -1,8 +1,7 @@
 import React from "react"
-import { ArrowButton } from "../styled"
 
 const PrevIcon = () => (
-  <ArrowButton className="btn-prev">
+  <button className="btn-arrow swiper-prev">
     <svg
       width="16"
       height="14"
@@ -15,7 +14,7 @@ const PrevIcon = () => (
         fill="#A9BFD1"
       />
     </svg>
-  </ArrowButton>
+  </button>
 )
 
 export default PrevIcon

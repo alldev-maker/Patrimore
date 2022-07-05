@@ -1,24 +1,4 @@
 import React from "react"
-import styled from "styled-components"
-import { down } from "styled-breakpoints"
-import { Typography } from "../styled"
-
-const Wrapper = styled.div`
-  .kicker {
-    margin-bottom: 5px;
-  }
-
-  ${down("sm")} {
-    h1 {
-      font-size: 26px;
-      line-height: 36px;
-    }
-    p {
-      font-size: 12px;
-      line-height: 18px;
-    }
-  }
-`
 
 const Heading = ({
   title,
@@ -28,15 +8,21 @@ const Heading = ({
   center2 = "left",
 }) => {
   return (
-    <Wrapper className="heading">
-      <Typography className="kicker" variant="kicker" align={center1}>
+    <div className="heading">
+      <p
+        className={`kicker ${
+          center1 === "left" ? "text-start" : "text-center"
+        }`}
+      >
         {kicker}
-      </Typography>
-      <Typography className="title" variant="title" align={center2}>
+      </p>
+      <h2
+        className={`title ${center2 === "left" ? "text-start" : "text-center"}`}
+      >
         {title}
-      </Typography>
-      {content && <Typography className="content">{content}</Typography>}
-    </Wrapper>
+      </h2>
+      {content && <p className="content">{content}</p>}
+    </div>
   )
 }
 

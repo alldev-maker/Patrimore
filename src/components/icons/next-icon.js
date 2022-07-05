@@ -1,8 +1,7 @@
 import React from "react"
-import { ArrowButton } from "../styled"
 
 const NextIcon = () => (
-  <ArrowButton className="btn-next">
+  <button className="btn-arrow swiper-next">
     <svg
       width="16"
       height="14"
@@ -15,7 +14,7 @@ const NextIcon = () => (
         fill="#A9BFD1"
       />
     </svg>
-  </ArrowButton>
+  </button>
 )
 
 export default NextIcon

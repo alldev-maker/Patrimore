@@ -11,4 +11,75 @@
       background-color: $secondary;
     }
   }
+  &-watch {
+    position: relative;
+    background-color: $secondary;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 53%;
+      transform: translate(-50%, -50%);
+      border-top: 7.5px solid transparent;
+      border-bottom: 7.5px solid transparent;
+      border-left: 11.6px solid white;
+    }
+    &::after {
+      content: "Ver video";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -97px;
+      white-space: pre;
+      font-size: 18px;
+      line-height: 28px;
+      color: $text;
+    }
+  }
+  &-primary__outline {
+    padding: 10px 50px;
+    border: 1px solid #8e24aa;
+    border-radius: 100px;
+    color: #8e24aa;
+    &:hover {
+      background-color: #8e24aa;
+      color: white;
+      transition: all ease-in 0.3s;
+    }
+  }
+  &-purple {
+    padding: 10px 24px;
+    background: #8e24aa;
+    border: 1px solid #8e24aa;
+    border-radius: 100px;
+    color: white;
+    &:hover {
+      background-color: $secondary;
+      border: 1px solid $secondary;
+      color: white;
+    }
+  }
+  &-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2.5px solid #a9bfd1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    &:hover {
+      border-color: #8e24aa;
+      svg {
+        path {
+          fill: #8e24aa;
+          transition: all ease-in 0.3s;
+        }
+      }
+    }
+  }
 }
