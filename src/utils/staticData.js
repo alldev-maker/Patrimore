@@ -1,18 +1,25 @@
 import {
   Barras,
   Billetera,
+  Corfo,
+  Facebook,
   George,
   Graph1,
   Graph2,
   Graph3,
+  Instagram,
   Joanna,
   Monitor,
+  NxtpLabs,
   Person,
   Rafael,
+  StartupChile,
+  Twitter,
   Work1,
   Work2,
   Work3,
   Work4,
+  Youtube,
 } from "./imgImport"
 
 export const nav_menus = [
@@ -141,5 +148,84 @@ export const testimonials = [
     feedback: `"El apoyo de Patrimore y mi asesor han sido invaluables, por todo el progreso que he logrado en mis finanzas durante el proceso de asesoria."`,
     rating: 4.4,
     avatar: Rafael,
+  },
+]
+
+export const footer_menu1 = [
+  {
+    name: "¿Por qué somos diferentes?",
+    to: "/",
+  },
+  {
+    name: "Preguntas frecuentes",
+    to: "/",
+  },
+  {
+    name: "Fondo Patrimore Guardian",
+    to: "/",
+  },
+]
+
+export const footer_menu2 = [
+  {
+    name: "Blog",
+    to: "/",
+  },
+  {
+    name: "Visión semanal",
+    to: "/",
+  },
+  {
+    name: "Clientes felices",
+    to: "/",
+  },
+]
+
+export const footer_menu3 = [
+  {
+    name: "Hablemos",
+    to: "/",
+  },
+  {
+    name: "Centro de ayuda",
+    to: "/",
+  },
+  {
+    name: "Términos y condiciones",
+    to: "/",
+  },
+]
+
+export const footer_menu4 = [
+  {
+    icon: StartupChile,
+    to: "/",
+  },
+  {
+    icon: NxtpLabs,
+    to: "/",
+  },
+  {
+    icon: Corfo,
+    to: "/",
+  },
+]
+
+export const footer_menu5 = [
+  {
+    icon: Youtube,
+    to: "/",
+  },
+  {
+    icon: Facebook,
+    to: "/",
+  },
+  {
+    icon: Instagram,
+    to: "/",
+  },
+  {
+    icon: Twitter,
+    to: "/",
   },
 ]

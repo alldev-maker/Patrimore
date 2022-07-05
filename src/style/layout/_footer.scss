@@ -1,34 +1,58 @@
 footer {
-  margin: 30px 0 100px;
-  @include mq("sm") {
-    margin-top: 60px;
-  }
-  .footer-nav {
-    margin-top: 70px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    li {
-      padding-bottom: 32px;
+  position: relative;
+  padding: 50px 0;
+  .nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 124.5%;
+    color: #2c506b;
+    padding: 8px 0;
+    &:hover {
+      color: $secondary;
     }
+  }
+  .social-links {
+    display: flex;
+    align-items: center;
+    li {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin-right: 16px;
+      flex-shrink: 0;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/footer-circle.png");
+    background-repeat: no-repeat;
+    width: 331px;
+    height: 494px;
+    z-index: -1;
+  }
+  .bottom-bar {
+    padding: 11px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     a {
-      color: black;
-      padding: 0 48px;
-      font-weight: 500;
-      @include mq("sm", max) {
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-      @include mq("xl", max) {
-        padding: 0 24px;
-      }
-      @include mq("md", max) {
-        padding: 0 40px;
-      }
-      &:hover {
-        text-decoration: underline;
-        text-underline-position: below;
+      position: absolute;
+      left: 0;
+      .footer-logo {
+        width: 99px;
+        height: 33px;
       }
     }
   }

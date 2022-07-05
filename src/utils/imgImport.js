@@ -26,6 +26,24 @@ import joanna from "../images/joanna.jpg"
 import rafael from "../images/rafael.jpg"
 import george from "../images/george.jpg"
 
+import youtube from "../images/youtube.svg"
+import facebook from "../images/facebook.svg"
+import instagram from "../images/instagram.svg"
+import twitter from "../images/twitter.svg"
+
+import startupChile from "../images/startup-chile.svg"
+import nxtpLabs from "../images/nxtp-labs.svg"
+import corfo from "../images/corfo.svg"
+
+export const Youtube = youtube
+export const Facebook = facebook
+export const Instagram = instagram
+export const Twitter = twitter
+
+export const StartupChile = startupChile
+export const NxtpLabs = nxtpLabs
+export const Corfo = corfo
+
 export const Joanna = joanna
 export const Rafael = rafael
 export const George = george
