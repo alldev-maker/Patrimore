@@ -1,0 +1,58 @@
+* {
+  font-family: "Clash Display";
+  margin: 0;
+  padding: 0;
+  color: $title;
+  font-family: "Poppins";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 0px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba(black, 0.8);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 3px;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  @include mq("xl") {
+    max-width: 1224px;
+  }
+  @include mq("md", max) {
+    max-width: calc(100% - 24px);
+  }
+}
+
+section {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}

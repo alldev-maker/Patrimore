@@ -1,0 +1,10 @@
+.btn {
+  &-primary {
+    padding: 10px 24px;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    background-color: $primary !important;
+    border-radius: 100px;
+  }
+}
