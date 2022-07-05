@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
 import React from "react"
-import styled from "styled-components"
 import { Logo } from "../utils/imgImport"
 import {
   footer_menu1,
@@ -9,8 +8,6 @@ import {
   footer_menu4,
   footer_menu5,
 } from "../utils/staticData"
-
-const Row = styled.div``
 
 const Footer = () => (
   <footer>
