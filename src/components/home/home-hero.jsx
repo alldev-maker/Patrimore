@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Traveller } from "../../utils/imgImport"
+import { StaticImage } from "gatsby-plugin-image"
 
 const HomeHero = () => (
   <section className="home-hero">
@@ -24,7 +24,11 @@ const HomeHero = () => (
           </div>
         </div>
         <div className="text-center">
-          <img className="w-100" src={Traveller} alt="traveller" />
+          <StaticImage
+            className="w-100"
+            src="../../images/traveller.png"
+            alt="traveller"
+          />
         </div>
       </div>
     </div>

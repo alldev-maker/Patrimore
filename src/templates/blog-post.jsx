@@ -7,7 +7,6 @@ import formatDate from "../utils/formatDate"
 
 const BlogPost = ({ data }) => {
   const blogData = data.prismicBlogPost.data
-  console.log(blogData)
   return (
     <Layout>
       <section className="blogs-section container">
@@ -21,7 +20,7 @@ const BlogPost = ({ data }) => {
           </div>
           <div className="col-md-6">
             <p className="kicker">{blogData.category}</p>
-            <h2 className="blog-item__title">{blogData.title}</h2>
+            <h2>{blogData.title}</h2>
             <p className="blog-item__content">{blogData.summary}</p>
             <p className="blog-item__date">
               {formatDate(blogData.publish_date)} · {blogData.reading_time} min
