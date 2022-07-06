@@ -1,3 +1,5 @@
+const prismicConfiguration = require("./prismic-configuration")
+
 module.exports = {
   siteMetadata: {
     title: `Patrimore`,
@@ -36,6 +38,18 @@ module.exports = {
       options: {
         fonts: [`Poppins\:300,400,500,600,700`],
         display: "swap",
+      },
+    },
+    {
+      resolve: "gatsby-source-prismic",
+      options: {
+        repositoryName: prismicConfiguration.prismicRepo,
+        accessToken: process.env.PRISMIC_ACCESS_TOKEN,
+        linkResolver: require("./src/utils/linkResolver").linkResolver,
+        schemas: {
+          blog_post: require("./custom_types/blog_post.json"),
+          vision_semanal: {},
+        },
       },
     },
   ],

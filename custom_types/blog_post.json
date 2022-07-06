@@ -1,0 +1,85 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Slug",
+        "placeholder": "Slug"
+      }
+    },
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title",
+        "placeholder": "Title"
+      }
+    },
+    "summary": {
+      "type": "Text",
+      "config": {
+        "label": "Summary",
+        "placeholder": "Summary"
+      }
+    },
+    "header_img": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Header Image"
+      }
+    },
+    "content": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label": "Content",
+        "placeholder": "Blog Content"
+      }
+    },
+    "category": {
+      "type": "Select",
+      "config": {
+        "options": [
+          "Cursos online",
+          "Finanzas personales",
+          "Inversión",
+          "Emprendimiento",
+          "Jubilación"
+        ],
+        "default_value": "Cursos online",
+        "label": "Category",
+        "placeholder": "Blog Category"
+      }
+    },
+    "publish_date": {
+      "type": "Date",
+      "config": {
+        "label": "Publish Date",
+        "placeholder": "Publish Date"
+      }
+    },
+    "reading_time": {
+      "type": "Number",
+      "config": {
+        "label": "Reading Time",
+        "placeholder": "Reading Time"
+      }
+    },
+    "author_name": {
+      "type": "Text",
+      "config": {
+        "label": "Author Name",
+        "placeholder": "Author Name"
+      }
+    },
+    "author_avatar": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Author Avatar"
+      }
+    }
+  }
+}
